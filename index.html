@@ -1,0 +1,719 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <title>Nexit con vos </title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <!-- Personalizacion de Landing -->
+    <link rel="stylesheet" type="text/css" href="css/modificarColores.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--[if lt IE 9]>
+        <script src="js/respond-1.1.0.min.js"></script>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/html5element.js"></script>
+    <![endif]-->
+
+    <!-- ReCaptcha Plugin -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+
+</head>
+
+<body>
+
+    <!-- Modal de los terminos y condiciones -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="mymodal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Términos y condiciones</h4>
+                </div>
+                <div id="condicionestexto" class="modal-body">
+                    <!-- Aqui el Cargarlanding.js carga el texto puesto en la variable "Condiciones"-->
+                </div>
+                <div class="modal-footer">
+                    <input id="condiciones" type="checkbox"> Acepto los terminos y condiciones
+                    <button id="" type="button" class="btn btn-default" onclick="js:window.print()">Imprimir</button>
+                    <button id="closemodal" type="button" class="btn btn-default pointerevent" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+
+    <!--Header_section-->
+    <header id="header_wrapper">
+        <div class="container">
+            <div class="header_box">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="logo" width="75" height="70">
+                    </a>
+                </div>
+                <!--<div class="nombreEmpresa"><img src="img/logo-hdpi.png" alt="nombreempresa" width="70" height="60"></div>-->
+                <nav class="navbar navbar-inverse" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="main-nav" class="collapse navbar-collapse navStyle">
+                        <ul class="nav navbar-nav" id="mainNav">
+                            <li class="active">
+                                <a href="#hero_section" class="scroll-link">HOME</a>
+                            </li>
+                            <li>
+                                <a href="#service" class="scroll-link">SMARTPANICS</a>
+                            </li>
+                            <li>
+                                <a href="#aboutUs" class="scroll-link">FUNCIONES</a>
+                            </li>
+                            <li>
+                                <a href="#disponible" class="scroll-link">PLATAFORMAS</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="scroll-link">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--Header_section-->
+
+    <!--Hero_Section-->
+    <section id="hero_section" class="top_cont_outer">
+        <div class="hero_wrapper">
+            <div class="container">
+                <div class="hero_section">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="top_left_cont zoomIn wow animated">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Hero_Section-->
+
+    <!--Service-->
+    <section id="service">
+        <div class="container">
+            <h2>¿QUÉ ES <img class="nexitalineado" src="img/logo-hdpi.png" margin-top="10" width="90" height="70"> ?</h2>
+            <div class="service_wrapper">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h6>Es una aplicación para el celular que protege a usted y a su familia las 24 horas, esté donde esté,</h6>
+                        <h6>conectándose a su empresa de monitoreo.</h6>
+                        <br/>
+                        <h6>Mientras en la central de monitoreo se opera su emergencia asistiéndolo, el sistema notifica</h6>
+                        <h6>automáticamente a sus familiares a través de
+                            <strong>E-mail - SMS - Notificación Push</strong>
+                        </h6>
+                        <br/>
+                        <h6>
+                            <strong>SmartPanics</strong> le permite enviar eventos de
+                            <strong>EMERGENCIA, ASISTENCIA</strong> o
+                            <strong>INCENDIO</strong>
+                        </h6>
+                        <h6>informando la localización exacta de forma contínua, a la central de monitoreo</h6>
+                        <br/>
+                        <h5>FUNCION MIS ALARMAS - 4 BOTONES PARA SU SEGURIDAD</h5>
+                        <br/>
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                        <div class="member wow bounceInUp animated">
+                            <div class="member-container" data-wow-delay=".1s">
+                                <div class="inner-container">
+                                    <div class="author-avatar">
+                                        <img class="img-circle" src="img/ico-sos.png" width="100" height="100">
+                                    </div>
+                                    <!-- /.author-avatar -->
+
+                                    <div class="member-details">
+                                        <div class="member-top">
+                                            <h3>
+                                                SOS PÁNICO
+                                            </h3>
+                                        </div>
+                                        <!-- /.member-top -->
+                                        <h7>
+                                            Envía un evento de Pánico a la Central de Monitoreo.
+                                        </h7>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col-md-6 -->
+
+
+                    <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                        <div class="member wow bounceInUp animated">
+                            <div class="member-container" data-wow-delay=".1s">
+                                <div class="inner-container">
+                                    <div class="author-avatar">
+                                        <img class="img-circle" src="img/ico-fuego.png" width="100" height="100">
+                                    </div>
+                                    <!-- /.author-avatar -->
+
+                                    <div class="member-details">
+                                        <div class="member-top">
+                                            <h3>
+                                                INCENDIO
+                                            </h3>
+                                        </div>
+                                        <!-- /.member-top -->
+                                        <h7>
+                                            Envía un evento de Fuego a la Central de Monitoreo.
+                                        </h7>
+                                    </div>
+                                    <!-- /.member-details -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <BR/>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                        <div class="member wow bounceInUp animated">
+                            <div class="member-container" data-wow-delay=".1s">
+                                <div class="inner-container">
+                                    <div class="author-avatar">
+                                        <img class="img-circle" src="img/ico-asistencia.png" width="100" height="100">
+                                    </div>
+                                    <!-- /.author-avatar -->
+
+                                    <div class="member-details">
+                                        <div class="member-top">
+                                            <h3>
+                                                ASISTENCIA
+                                            </h3>
+                                        </div>
+                                        <!-- /.member-top -->
+                                        <h7>
+                                            Envía un pedido de Asistencia o evento de Alarma Médica a la Central de Monitoreo.
+                                        </h7>
+                                    </div>
+                                    <!-- /.member-details -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                        <div class="member wow bounceInUp animated">
+                            <div class="member-container" data-wow-delay=".1s">
+                                <div class="inner-container">
+                                    <div class="author-avatar">
+                                        <img class="img-circle" src="img/ico_espera.png" width="100" height="100">
+                                    </div>
+                                    <!-- /.author-avatar -->
+
+                                    <div class="member-details">
+                                        <div class="member-top">
+                                            <h3>
+                                                EN CAMINO
+                                            </h3>
+                                        </div>
+                                        <!-- /.member-top -->
+                                        <h7>
+                                            Envía un evento de SOS demorado a la Central de Monitoreo permitiendo un recorrido supervisado y seguro hasta el lugar de destino.
+                                        </h7>
+                                    </div>
+                                    <!-- /.member-details -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Service-->
+
+    <section class="page_section" id="clients">
+        <!--page_section-->
+        <div class="container">
+            <h2>FUNCIÓN EN CAMINO</h2>
+            <!--page_section-->
+            <div class="member-area">
+                <div class="row">
+                    <div class="member wow bounceInUp animated">
+                        <div class="member-container" data-wow-delay=".1s">
+                            <div id="Nuevo1" class="Nuevo1">
+                                <div class="inner-container">
+                                    <div class="author-avatar">
+                                        <img class="img-circle" src="img/ico_espera.png" width="100" height="100">
+                                    </div>
+                                    <!-- /.author-avatar -->
+
+                                    <div class="member-details">
+                                        <h7>
+                                            El botón En Camino le permite notificar a través del sistema un traslado con cobertura de seguridad o protegido, durante el cual no será necesario que se accione el botón de emergencia para generar alarma en caso de ser atacado.
+                                        </h7>
+                                        <br/>
+                                        <br/>
+                                        <h7>El sistema opera con una ventana de tiempo que usted debe cumplir para culminar su traslado, generándose un evento de emergencia, con posición transmitida cada 20 segundos a la central si no se cancela al tiempo
+                                            de cumplir el viaje a salvo.</h7>
+
+                                    </div>
+                                    <!-- /.member-details -->
+
+                                </div>
+                                <!-- /.inner-container -->
+                            </div>
+                        </div>
+                        <!-- /.member-container -->
+                    </div>
+                    <!-- /.member -->
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /. Member area -->
+
+            <div class="service_wrapper">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12" align="center" style="margin-bottom:20px">
+                        <div class="Nuevo2">
+                            <div class="delay-03s animated wow  zoomIn">
+                                <img src="img/ico-encamino_1.png" alt="" />
+                            </div>
+                            <h6>En caso de haber llegado a destino sin ningún imprevisto podrá cancelar el envío de la alarma.</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12" align="center">
+                        <div class="icon2  delay-03s animated wow zoomIn">
+                            <div class="Nuevo2">
+                                <img src="img/ico-encamino_2.png" alt="" />
+                            </div>
+                            <h6>En caso contrario el envío cursará sin la necesidad de presionar ningún botón.</h6>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--client_logos-->
+
+    <section id="aboutUs">
+        <!--MULTIMEDIA-->
+        <div class="inner_wrapper aboutUs-container fadeInLeft animated wow">
+            <div class="container">
+                <h2>MULTIMEDIA DE SEGURIDAD</h2>
+                <h6>Con el envío en curso de una alarma la APP SmartPanics le permite la acción de varias </h6>
+                <h6>funciones multimedia para comunicarse con su Central de Monitoreo.</h6>
+                <br/>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                        <div align="center">
+                            <img src="img/ico-multimedia2.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 about-us">
+                        <ul class="about-us-list">
+                            <br/>
+                            <li class="points">
+                                <span>Envío de imágenes capturadas con la cámara del smartphone u obtenidas del carrete.</span>
+                            </li>
+                            <li class="points">Adjuntar nota de audio.</li>
+                            <li class="points">Adjuntar nota de texto.</li>
+                            <li class="points">Envío de un e-mail desde su correo predeterminado.</li>
+                            <li class="points">Realizar llamadas one touch (automáticas).</li>
+                            <li class="points">Envío de un clip de video con cámara frontal o posterior.</li>
+                        </ul>
+                        <!-- /.about-us-list -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--MULTIMEDIA-->
+
+
+    <!-- team -->
+    <section class="page_section team" id="team">
+        <!--main-section team-start-->
+        <div class="container">
+            <h2>MÁS FUNCIONES, MÁS SEGURIDAD PARA SU FAMILIA</h2>
+            <div class="member-area">
+                <div class="row">
+                    <div class="member wow bounceInUp animated">
+                        <div class="member-container" data-wow-delay=".1s">
+                            <div id="Nuevo1" class="Nuevo1">
+                                <div class="inner-container">
+                                    <div class="author-avatar">
+                                        <img class="img-circle" src="img/ico-grupo.png" width="100" height="100">
+                                    </div>
+                                    <!-- /.author-avatar -->
+
+                                    <div class="member-details">
+                                        <div class="member-top">
+                                            <h3>
+                                                FUNCIÓN GRUPO
+                                            </h3>
+                                        </div>
+                                        <!-- /.member-top -->
+                                        <h7>
+                                            Permite unifica el control de la seguridad familiar o laboral, integrando en un conjunto los SmartPanics de múltiples miembros. Estos pueden tener categoría de Coordinador o Miembro. Los Coordinadores pueden visualizar la posición actual e histórica de
+                                            los miembros, visualizar sus eventos, definirles múltiples geocercas de alerta por ingreso o egreso y cambiar su configuración de seguimiento. Se puede definir también velocidad máxima por usuario y generar
+                                            alertas por sobrepaso. Las alertas se notifican a través de emails, SMS o Push.
+                                        </h7>
+
+                                    </div>
+                                    <!-- /.member-details -->
+
+                                </div>
+                                <!-- /.inner-container -->
+                                <br>
+                                <div class="delay-01s animated wow  zoomIn" align="center">
+                                    <img src="img/grupo.png" alt="" />
+                                </div>
+                            </div>
+                            <!-- Nevo1 -->
+                        </div>
+                        <!-- /.member-container -->
+                    </div>
+                    <!-- /.member -->
+                </div>
+
+                <div class="row">
+                    <div class="member wow bounceInUp animated">
+                        <div class="member-container" data-wow-delay=".3s">
+                            <div id="Nuevo1" class="Nuevo1">
+                                <div class="inner-container">
+                                    <div class="author-avatar">
+                                        <img class="img-circle" src="img/ico-seguimiento.png" width="100" height="100">
+                                    </div>
+                                    <!-- /.author-avatar -->
+                                    <div class="member-details">
+                                        <div class="member-top">
+                                            <h3>
+                                                FUNCIÓN SEGUIMIENTO
+                                            </h3>
+                                        </div>
+                                        <!-- /.member-top -->
+                                        <h7>
+                                            Cada aplicación SmartPanics esta diseñada para reportar una posición al centro de monitoreo según una rutina de cálculo tiempo-distancia, pudiendo fijarse estos dos parámetros para cada unidad acorde se requiera. Los Coordinadores del grupo tienen derecho
+                                            a configurar el encendido o apagado y el tiempo-distancia de los distintos miembros. El reporte de posición funciona con la App en segundo plano, aunque no esté siendo utilizada abierta por el usuario.
+                                        </h7>
+
+                                    </div>
+                                    <!-- /.member-details -->
+                                    <br>
+                                </div>
+                                <!-- /.inner-container -->
+                            </div>
+                        </div>
+                        <!-- /.member-container -->
+                    </div>
+                    <!-- /.member -->
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="member wow bounceInUp animated">
+                        <div class="member-container" data-wow-delay=".3s">
+                            <div id="Nuevo1" class="Nuevo1">
+                                <div class="inner-container">
+                                    <div class="author-avatar">
+                                        <img class="img-circle" src="img/ico-geocerca.png" width="100" height="100">
+                                    </div>
+                                    <!-- /.author-avatar -->
+                                    <div class="member-details">
+                                        <div class="member-top">
+                                            <h3>
+                                                FUNCIÓN GEOCERCA
+                                            </h3>
+                                        </div>
+                                        <!-- /.member-top -->
+                                        <h7>
+                                            SoftGuard Virginia: Una geocerca es un "cerco virtual" que se define en un mapa. Pueden crearse ilimitada cantidad de geocercas de inclusión o exclusión para cada usuario miembro. Las mismas pueden ser creadas por los mismos Coordinadores desde la App
+                                            y el sistema las sube y activa en las Apps de los miembros. Una vez creadas las geocercas, pueden definirse alertas por email, SMS y/o Push para que se alerte a los interesado sobre el ingreso o egreso de un
+                                            miembro de una zona geocercada
+                                        </h7>
+
+                                    </div>
+                                    <!-- /.member-details -->
+                                    <br>
+
+                                    <div class="delay-01s animated wow  zoomIn" align="center">
+                                        <img src="img/seguimiento.png" alt="" />
+                                    </div>
+                                </div>
+                                <!-- /.inner-container -->
+                            </div>
+                        </div>
+                        <!-- /.member-container -->
+                    </div>
+                    <!-- /.member -->
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="member wow bounceInUp animated">
+                        <div class="member-container" data-wow-delay=".3s">
+                            <div id="Nuevo1" class="Nuevo1">
+                                <div class="inner-container">
+                                    <div class="author-avatar">
+                                        <img class="img-circle" src="img/ico-miscamaras.png" width="100" height="100">
+                                    </div>
+                                    <!-- /.author-avatar -->
+                                    <div class="member-details">
+                                        <div class="member-top">
+                                            <h3>
+                                                MIS CAMARAS
+                                            </h3>
+                                        </div>
+                                        <!-- /.member-top -->
+                                        <h7>
+                                            Permite integrar en la aplicación distintas fuentes de video, sea que provengan de cámaras web, DVR, NVR y otra, para visualizarlas en vivo en el momento que se desee
+                                        </h7>
+
+                                    </div>
+                                    <!-- /.member-details -->
+                                    <br>
+
+                                </div>
+                                <!-- /.inner-container -->
+                            </div>
+                        </div>
+                        <!-- /.member-container -->
+                    </div>
+                    <!-- /.member -->
+                </div>
+                <!-- /.row -->
+            </div>
+        </div>
+    </section>
+    <!--/Portfolio -->
+
+
+
+    <section class="page_section contact" id="disponible">
+        <div class="container contact_section">
+            <h2>PLATAFORMAS</h2>
+            <div class="service_wrapper">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12" align="center">
+                        <div class="delay-03s animated wow  zoomIn">
+                            <a href="https://play.google.com/store/apps/details?id=com.softguard.android.smartpanicsNG">
+                                <img src="img/ico-android.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12" align="center">
+                        <div class="delay-03s animated wow  zoomIn">
+                            <a href="https://itunes.apple.com/es/app/smartpanicsng/id1058553591?mt=8">
+                                <img src="img/ico-iphone.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page_section team" id="contact">
+        <!--main-section team-start-->
+        <div class="container">
+            <h2>COMPLETE Y ACTIVE SU SERVICIO NEXIT AQUI:</h2>
+            <div class="row">
+                <div class="form" align="left">
+
+                    <span class="required">
+                        <div class="form-group">
+                            <label for="">Nombre y Apellido (*)</label>
+                            <input class="input-text" type="text" name="nombre" id="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Numero de Documento / Identificacion (*)</label>
+                            <input class="input-text" type="text" name="dni" id="dni" required>
+                        </div>
+                    
+                        <div id="errormail" class="form-group">
+                            <label id="errormaillabel2" for="email">El correo ingresado, no tiene un formato valido. Reescribalo</label>
+                            <label id="errormaillabel" for="email">Los correos no coinciden, vuelva a escribirlos.</label>
+                            <label for="">E-Mail (*)</label>
+                            <input class="input-text" type="text" name="email" id="email" required>
+                        </div>
+                        
+                        <div id="email2" class="form-group">
+                            <label for="emailvalidator">Por favor, vuelva a ingresar su Email</label>
+                            <input class="input-text" type="text" name="email" id="emailvalidator" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Pais</label>
+                            <select id="pais" class="input-text" name="pais" required>
+								<option value=''></option>
+                                <!-- Se carga por JSON -->
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Ciudad</label>
+                            <select id="ciudad" class="input-text" name="ciudad" required>
+                                <!-- Se carga por JSON -->
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="">Direccion (*)</label>
+                            <input class="input-text" type="text" name="direccion" id="direccion" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Organizacion / Empresa (*)</label>
+                            <input class="input-text" type="text" name="empresa" id="empresa" required>
+                        </div>
+                                                
+                        <div class="form-group">
+                            <label for="">Telefono</label>
+                            <label id="errortelefonolabel" for="telefono">Los teléfonos no coinciden o no cuentan con los digitos necesarios, vuelva a escribirlos.</label>
+                            <input class="input-text" type="text" name="telefono" id="telefono" required>
+                        </div>                          
+                        
+                        <div id="telefono2" class="form-group">
+                            <label for="telefonovalidator">Por favor, vuelva a escribir su Teléfono</label>
+                            <input class="input-text" type="text" name="telefonovalidator" id="telefonovalidator" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Comentario</label>
+                            <textarea class="input-text text-area" name="comentario" id="comentario" cols="0" rows="0" ></textarea>
+                        </div>
+                        
+                        <div class="row chekcbox condiciones text-center">
+                            <p class="terminos">Debera leer los términos  y condiciones previamente al envio del correo. </p><a class="terminos bold underline" data-toggle="modal" href="#mymodal">Ver los terminos y condiciones</a>
+                            <!--
+                                <input id="condiciones" type="checkbox"> Acepto los terminos y condiciones
+                            -->
+                        </div>
+
+                        <div class="g-recaptcha" align="center"  data-callback="enableEnviar"></div>
+
+                        <div class="row enviar text-center">
+                            <input id="enviar" class="input-btn pointerevent" type="button" value="ENVIAR" onclick="checkEnviar(event);">
+                        </div>
+                        
+                        <!-- Campos ocultos editados por el usuario -->
+                        <input id="dealer" type="text" class="hidden">
+                        <input id="mailTo" type="text" class="hidden">
+                        <input id="mailSubject" type="text" class="hidden">
+                        <div id="mailBody" class="hidden"></div>
+                        <input id="mailSubjectCustomer" type="text" class="hidden">
+                        <div id="mailBodyCustomer" class="hidden"></div>
+                        <input id="plantillaSP" type="text" class="hidden">
+                        <input id="cuentatipo" type="text" class="hidden">
+
+                        <input id="automonitoreo" type="text" class="hidden">
+                        <input id="diasprueba" type="text" class="hidden">
+                        <!-- Campos ocultos editados por el usuario / fin -->
+
+                </div>
+            </div>
+            <br/>
+        </div>
+    </section>
+    <section  class="page_section" id="build">
+        <div class="container">
+            <div class="service_wrapper">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12" align="center">
+                        <div class="delay-03s animated wow  zoomIn">
+                            <span>
+                                <img src="img/footer1A.jpg" alt="" /> </span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12" align="center">
+                <div class="icon2  delay-04s animated wow zoomIn">
+                    <span>                       
+                       <!--<div class="nombreEmpresa"><img src="img/logo-hdpi.png" alt="nombreempresa" width="70" height="60"></div>--> 
+                                <!--<img src="img/footer2.jpg" alt="" /> </span>-->
+                    <img src="img/logo-hdpi.png" width="160" height="170" />
+                    </span>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section class="page_section contact" id="descargas" style="display:none;">
+        <div class="container">
+            <div class="contact_section">
+                <h6>MUCHAS GRACIAS POR CONTACTARSE CON NOSOTROS.</h2>
+                    <h2>DESCARGUE SMARTPANICS GRATIS
+                        <br/> EN SU DISPOSITIVO MÓVIL</h2>
+
+                    <div class="service_wrapper">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12" align="right">
+                                <div class="delay-03s animated wow  zoomIn">
+                                    <a href="https://play.google.com/store/apps/details?id=com.softguard.android.smartpanicsNG" target="_blank" />
+                                    <img src="img/ico-android.png" alt="" />
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12" align="left">
+                                <div class="delay-03s animated wow  zoomIn">
+                                    <a href="https://itunes.apple.com/co/app/smartpanicsng/id1058553591?mt=8" target="_blank" />
+                                    <img src="img/ico-iphone.png" alt="" />
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+
+
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/modificar.js"></script>
+    <script type="text/javascript" src="js/cargaLanding.js"></script>
+
+    <script type="text/javascript" src="js/validarMail.js"></script>
+
+</body>
+
+</html>

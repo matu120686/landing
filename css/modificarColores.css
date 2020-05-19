@@ -1,0 +1,14 @@
+/* modificacion personalizada */
+
+:root {
+    /* Color de fondo gris oscuro */
+    --background-color: #000;
+    /* Color de fondo negro */
+    --background-color2: #000;
+    /* Color naranja de los textos */
+    --text-color: rgb(221, 53, 58);
+    /* Color blanco de los textos */
+    --text-color2: #fff;
+    /* Color del texto del form */
+    --text-label: #fff;
+}
